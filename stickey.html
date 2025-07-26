@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sticky Header & Fixed Footer</title>
+  <style>
+    /* Reset default styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding-bottom: 60px; /* Space for footer */
+}
+
+/* Sticky Header */
+.sticky-header {
+  position: sticky;
+  top: 0;
+  background-color: #007bff;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Main Content */
+.content {
+  padding: 20px;
+}
+
+/* Fixed Footer */
+.fixed-footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: #343a40;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  z-index: 100;
+}
+
+  </style>
+</head>
+<body>
+  <!-- Sticky Header -->
+  <header class="sticky-header">
+    <h2>Sticky Header</h2>
+  </header>
+
+  <!-- Main Content -->
+  <main class="content">
+    <h3>Scroll down to see sticky header and fixed footer in action</h3>
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+    <p>Integer nec odio. Praesent libero. Sed cursus ante dapibus diam.</p>
+    <p>Sed nisi. Nulla quis sem at nibh elementum imperdiet.</p>
+    <p>Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta.</p>
+    <p>Mauris massa. Vestibulum lacinia arcu eget nulla.</p>
+    <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra.</p>
+    <p>Inceptos himenaeos. Curabitur sodales ligula in libero.</p>
+    <p>Sed dignissim lacinia nunc. Curabitur tortor. Pellentesque nibh.</p>
+    <p>Aenean quam. In scelerisque sem at dolor. Maecenas mattis.</p>
+    <p>Sed convallis tristique sem. Proin ut ligula vel nunc egestas porttitor.</p>
+  </main>
+
+  <!-- Fixed Footer -->
+  <footer class="fixed-footer">
+    <p>Fixed Footer - Always at Bottom</p>
+  </footer>
+</body>
+</html>
